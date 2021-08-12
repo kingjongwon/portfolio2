@@ -15,6 +15,8 @@ import Pic5 from "../media/pic5.jpg";
 import Pic6 from "../media/pic6.jpg";
 import Pic8 from "../media/pic8.JPG";
 import Pic17 from "../media/pic17.jpg";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 export default function Favorite() {
   return (
@@ -23,38 +25,56 @@ export default function Favorite() {
         <div className="pic-box">
           <h1 className="pic-tit">Picture</h1>
           <ul className="pic-gnb">
-            <li>
-              <img src={Pic1} alt="pic1" />
-            </li>
-            <li>
-              <img src={Pic11} alt="pic1" />
-            </li>
-            <li>
-              <img src={Pic8} alt="pic1" />
-            </li>
-            <li>
-              <img src={Pic15} alt="pic1" />
-            </li>
-            <li>
-              <p>
-                기억을 기록 할 수 있다는 점에서 <br />
-                사진의 매력을 느끼게 됐습니다. <br />
-                19살 때 첫 알바비로 중고 카메라를 산 이후 <br />
-                꾸준히 취미생활로 사진을 찍고 있습니다.
-              </p>
-            </li>
-            <li>
-              <img src={Pic2} alt="pic1" />
-            </li>
-            <li>
-              <img src={Pic5} alt="pic1" />
-            </li>
-            <li>
-              <img src={Pic6} alt="pic1" />
-            </li>
-            <li>
-              <img src={Pic17} alt="pic1" />
-            </li>
+            <Fade left duration={1000}>
+              <li>
+                <img src={Pic1} alt="pic1" />
+              </li>
+            </Fade>
+            <Fade duration={3000}>
+              <li>
+                <img src={Pic11} alt="pic1" />
+              </li>
+            </Fade>
+            <Fade right duration={1000}>
+              <li>
+                <img src={Pic8} alt="pic1" />
+              </li>
+            </Fade>
+            <Fade left duration={2000}>
+              <li>
+                <img src={Pic15} alt="pic1" />
+              </li>
+            </Fade>
+            <Fade duration={4000}>
+              <li>
+                <p>
+                  기억을 기록 할 수 있다는 점에서 <br />
+                  사진의 매력을 느끼게 됐습니다. <br />
+                  19살 때 첫 알바비로 중고 카메라를 산 이후 <br />
+                  꾸준히 취미생활로 사진을 찍고 있습니다.
+                </p>
+              </li>
+            </Fade>
+            <Fade right duration={2000}>
+              <li>
+                <img src={Pic2} alt="pic1" />
+              </li>
+            </Fade>
+            <Fade left duration={2000}>
+              <li>
+                <img src={Pic5} alt="pic1" />
+              </li>
+            </Fade>
+            <Fade duration={2000}>
+              <li>
+                <img src={Pic6} alt="pic1" />
+              </li>
+            </Fade>
+            <Fade right duration={2000}>
+              <li>
+                <img src={Pic17} alt="pic1" />
+              </li>
+            </Fade>
           </ul>
         </div>
         <div className="fb-box">
