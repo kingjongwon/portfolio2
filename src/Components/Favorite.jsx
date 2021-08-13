@@ -80,62 +80,71 @@ export default function Favorite() {
         <div className="fb-box">
           <h1 className="fb-tit">FootBall</h1>
           <ul className="fb-gnb">
-            <li>
-              <div className="fb-txt-box">
-                <p>
-                  초등학교 입학 전 부터 축구를 좋아했고, <br />
-                  입학 후 부터 고등학교 2학년, 부상당하기 전까지 <br />
-                  축구선수를 꿈꾸며 운동을 했습니다. <br />
-                  이루지 못한 꿈이 되었지만, <br />
-                  오히려 홀가분하게 축구를 더욱 즐기고 있습니다.
-                </p>
-              </div>
-            </li>
-            <li>
-              <HoverVideoPlayer
-                controls
-                videoSrc={Football4}
-                pausedOverlay={
-                  <img src={Football6} alt="football5" className="h-img" />
-                }
-                overlayTransitionDuration={1000}
-                className="h-video"
-              />
-            </li>
-            <li>
-              <HoverVideoPlayer
-                controls
-                videoSrc={Football2}
-                pausedOverlay={
-                  <img src={Football5} alt="football5" className="h-img" />
-                }
-                overlayTransitionDuration={1000}
-                className="h-video"
-              />
-            </li>
-
-            <li>
-              <HoverVideoPlayer
-                controls
-                videoSrc={Football3}
-                pausedOverlay={
-                  <img src={Football7} alt="football5" className="h-img" />
-                }
-                overlayTransitionDuration={1000}
-                className="h-video"
-              />
-            </li>
-            <li>
-              <HoverVideoPlayer
-                controls
-                videoSrc={Football1}
-                pausedOverlay={
-                  <img src={Football8} alt="football5" className="h-img" />
-                }
-                overlayTransitionDuration={1000}
-                className="h-video"
-              />
-            </li>
+            <Fade top duration={2000}>
+              <li>
+                <div className="fb-txt-box">
+                  <p>
+                    초등학교 입학 전 부터 축구를 좋아했고, <br />
+                    입학 후 부터 고등학교 2학년, 부상당하기 전까지 <br />
+                    축구선수를 꿈꾸며 운동을 했습니다. <br />
+                    이루지 못한 꿈이 되었지만, <br />
+                    오히려 홀가분하게 축구를 더욱 즐기고 있습니다.
+                  </p>
+                </div>
+              </li>
+            </Fade>
+            <Fade left duration={2000}>
+              <li>
+                <HoverVideoPlayer
+                  controls
+                  videoSrc={Football4}
+                  pausedOverlay={
+                    <img src={Football6} alt="football5" className="h-img" />
+                  }
+                  overlayTransitionDuration={1000}
+                  className="h-video"
+                />
+              </li>
+            </Fade>
+            <Fade right duration={2000}>
+              <li>
+                <HoverVideoPlayer
+                  controls
+                  videoSrc={Football2}
+                  pausedOverlay={
+                    <img src={Football5} alt="football5" className="h-img" />
+                  }
+                  overlayTransitionDuration={1000}
+                  className="h-video"
+                />
+              </li>
+            </Fade>
+            <Fade left duration={2000}>
+              <li>
+                <HoverVideoPlayer
+                  controls
+                  videoSrc={Football3}
+                  pausedOverlay={
+                    <img src={Football7} alt="football5" className="h-img" />
+                  }
+                  overlayTransitionDuration={1000}
+                  className="h-video"
+                />
+              </li>
+            </Fade>
+            <Fade right duration={2000}>
+              <li>
+                <HoverVideoPlayer
+                  controls
+                  videoSrc={Football1}
+                  pausedOverlay={
+                    <img src={Football8} alt="football5" className="h-img" />
+                  }
+                  overlayTransitionDuration={1000}
+                  className="h-video"
+                />
+              </li>
+            </Fade>
           </ul>
         </div>
       </div>
