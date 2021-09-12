@@ -3,8 +3,19 @@ import Mark from "../media/mark.jpg";
 import Neo from "../media/neo.jpg";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
+import { useMediaQuery } from "react-responsive";
 
 export default function About() {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 620px)",
+  });
+  const isDesk = useMediaQuery({
+    query: "(min-width: 1540px)",
+  });
+  const isLap = useMediaQuery({
+    query: " (min-width:620px) and (max-width: 1540px)",
+  });
+
   return (
     <div className="h-c-container">
       <div className="h-c-box">
@@ -23,23 +34,63 @@ export default function About() {
             <strong>저는, 제가 원하는 무엇이든 될 수 있다 믿습니다.</strong>
           </p>
         </Zoom>
-        <div className="a-imgbox">
-          <Fade left duration={3000}>
-            <div className="steve-box">
-              <img src={Steve} alt="steve" />
-            </div>
-          </Fade>
-          <Fade duration={7000}>
-            <div className="neo-box">
-              <img src={Neo} alt="neo" />
-            </div>
-          </Fade>
-          <Fade right duration={3000}>
-            <div className="mark-box">
-              <img src={Mark} alt="mark" />
-            </div>
-          </Fade>
-        </div>
+        {isDesk && (
+          <div className="a-imgbox">
+            <Fade left duration={3000}>
+              <div className="steve-box">
+                <img src={Steve} alt="steve" />
+              </div>
+            </Fade>
+            <Fade duration={7000}>
+              <div className="neo-box">
+                <img src={Neo} alt="neo" />
+              </div>
+            </Fade>
+            <Fade right duration={3000}>
+              <div className="mark-box">
+                <img src={Mark} alt="mark" />
+              </div>
+            </Fade>
+          </div>
+        )}
+        {isLap && (
+          <div className="a-imgbox">
+            <Fade left duration={3000}>
+              <div className="steve-box">
+                <img src={Steve} alt="steve" />
+              </div>
+            </Fade>
+            <Fade duration={7000}>
+              <div className="neo-box">
+                <img src={Neo} alt="neo" />
+              </div>
+            </Fade>
+            <Fade right duration={3000}>
+              <div className="mark-box">
+                <img src={Mark} alt="mark" />
+              </div>
+            </Fade>
+          </div>
+        )}
+        {isMobile && (
+          <div className="a-imgbox">
+            <Fade top duration={2000}>
+              <div className="steve-box">
+                <img src={Steve} alt="steve" />
+              </div>
+            </Fade>
+            <Fade left duration={2000}>
+              <div className="neo-box">
+                <img src={Neo} alt="neo" />
+              </div>
+            </Fade>
+            <Fade right duration={2000}>
+              <div className="mark-box">
+                <img src={Mark} alt="mark" />
+              </div>
+            </Fade>
+          </div>
+        )}
       </div>
     </div>
   );

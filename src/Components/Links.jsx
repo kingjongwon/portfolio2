@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 
 const activeStyle = {
-  color: "rgb(44, 59, 145)",
+  color: "rgb(80, 48, 6)",
+  borderBottom: "2px solid rgb(80, 48, 6)",
 };
 
 export default function Links() {
@@ -27,7 +28,7 @@ export default function Links() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="favorite" activeStyle={activeStyle}>
+            <NavLink to="/favorite" activeStyle={activeStyle}>
               Favorite
             </NavLink>
           </li>

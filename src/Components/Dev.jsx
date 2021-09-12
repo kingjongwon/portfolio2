@@ -3,6 +3,8 @@ import Jvideo from "../media/jbl.mp4";
 import Pvideo from "../media/portfolio.mp4";
 import Mvideo from "../media/movie.mp4";
 import Cvideo from "../media/corona.mp4";
+import Tvideo from "../media/tweeter.mp4";
+
 import Fade from "react-reveal/Fade";
 
 export default function Dev() {
@@ -16,7 +18,7 @@ export default function Dev() {
             <p className="dev-tool">
               사용언어 : HTML5, CSS3, JAVASCRIPT, JQUERY
             </p>
-            <video src={Vvideo} controls autoPlay loop muted />
+            <video src={Vvideo} controls loop muted />
             <p className="dev-info">
               퍼블리셔 준비를 할 때 만든 작업물로 전체 페이지가 아닌 <br />
               메인 페이지의 리디자인 입니다.
@@ -44,7 +46,7 @@ export default function Dev() {
             <p className="dev-tool">
               사용언어 : HTML5, CSS3, JAVASCRIPT, JQUERY
             </p>
-            <video src={Jvideo} controls autoPlay loop muted />
+            <video src={Jvideo} controls loop muted />
             <p className="dev-info">
               이 페이지 역시 퍼블리셔 준비를 할 때 만든 작업물로 전체 페이지가
               아닌 <br />
@@ -72,7 +74,7 @@ export default function Dev() {
             <h1 className="dev-tit">Portfolio</h1>
             <p className="dev-name">제작 : 김종원</p>
             <p className="dev-tool">사용언어 : React</p>
-            <video src={Pvideo} controls autoPlay loop muted />
+            <video src={Pvideo} controls loop muted />
             <p className="dev-info">
               이 페이지는 React를 처음 배우며 만들었던 포트폴리오 페이지 입니다.
               <br />
@@ -103,7 +105,7 @@ export default function Dev() {
             </h1>
             <p className="dev-name">제작 : 김종원</p>
             <p className="dev-tool">사용언어 : React</p>
-            <video src={Mvideo} controls autoPlay loop muted />
+            <video src={Mvideo} controls loop muted />
             <p className="dev-info">
               리액트 공부를 하며 클론코딩한 영화정보 페이지 입니다. <br />
               <strong>axios를 통해 API를 활용</strong>하는 공부를 했습니다.
@@ -118,14 +120,14 @@ export default function Dev() {
             </button>
           </div>
         </Fade>
-        <Fade bottom duration={500}>
+        <Fade left duration={500}>
           <div className="dev-box">
             <h1 className="dev-tit">
               Corona Live <br /> (Clone)
             </h1>
             <p className="dev-name">제작 : 김종원</p>
             <p className="dev-tool">사용언어 : React</p>
-            <video src={Cvideo} controls autoPlay loop muted />
+            <video src={Cvideo} controls loop muted />
             <p className="dev-info">
               이 역시 리액트 공부를 하며 클론코딩한 영화정보 페이지 입니다.{" "}
               <br />
@@ -137,6 +139,29 @@ export default function Dev() {
                 href="https://kingjongwon.github.io/react-corona/"
                 target="_blank"
               >
+                Go Web
+              </a>
+            </button>
+          </div>
+        </Fade>
+        <Fade right duration={500}>
+          <div className="dev-box">
+            <h1 className="dev-tit">
+              Tweeter <br /> (Clone)
+            </h1>
+            <p className="dev-name">제작 : 김종원</p>
+            <p className="dev-tool">사용언어 : React, Firebase</p>
+            <video src={Tvideo} controls loop muted />
+            <p className="dev-info">
+              이 역시 리액트 공부를 하며 클론코딩한 트위터 기능 웹 입니다.
+              <br />
+              Firebase로 서버를 구축한 후{" "}
+              <strong>회원가입, 로그인, 로그아웃</strong> 등의
+              <br /> 실질적으로 필요한 기능구현을 공부하기 위한 공부를 했습니다.
+              <br />
+            </p>
+            <button className="dev-btn">
+              <a href="https://kingjongwon.github.io/jwitter/" target="_blank">
                 Go Web
               </a>
             </button>
