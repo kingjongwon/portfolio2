@@ -157,7 +157,7 @@ export default function Dev() {
               <br />
               Firebase로 서버를 구축한 후{" "}
               <strong>회원가입, 로그인, 로그아웃</strong> 등의
-              <br /> 실질적으로 필요한 기능구현을 공부하기 위한 공부를 했습니다.
+              <br /> 실질적으로 필요한 기능구현을 위한 공부를 했습니다.
               <br />
             </p>
             <button className="dev-btn">
